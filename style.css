@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*vai considerar sempre as dimensões que forem especificadas, caso contrário aumentaria 40 px*/
+}
+ul{
+    list-style: none;
+}
+body{
+    background-image: url(./assets/bg.jpg); /*recebe a imagem*/
+    background-position: top center; /*posiciona o fundo: topo e centralizado*/
+    background-size: 100% auto; /* fica 100% da largura que aumentar a tela*/
+    background-repeat: no-repeat; /*não repetir o backgound*/
+    background-color: #121214; 
+}
+body *{
+    font-family: 'Inter',sans-serif;
+    line-height: 160%;
+}
+main{
+    max-width: 580px; /*todos os elementos vão manter esse tamanho*/
+    width: 90%; /*relativo a largura da tela*/
+    margin: auto; /* calculo automatico para preencher as laterias*/
+    
+    display:grid;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+section{
+    color:  white;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+section h2{
+    letter-spacing: -0.47px;
+}
+section div{
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+
+
+}
+section p{
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+}
+section ul{
+    display: flex;
+    flex-wrap: wrap; /*se aumentar os itens, há um reajuste e joga pra baixo*/
+    gap: 16px; /*só funciona com o display flex, espaço entre os items*/
+    margin-top: 24px;
+}
+.games-list img{
+    width: 90px;
+    border-radius: 8px;
+}
+.channel-list img{
+    border-radius: 50%;
+    width: 70px;
+}
